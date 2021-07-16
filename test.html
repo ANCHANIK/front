@@ -16,7 +16,9 @@
             $("#btn").click(function(){
                 $("#box").stop().animate({
                     "left":"700px"
-                },700);
+                },700,function(){
+                    $("#box").fadeOut();
+                });
             });
         })
     </script>
